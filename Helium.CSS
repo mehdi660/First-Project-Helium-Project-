@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: rgb(28, 26, 26);
+  color: aliceblue;
+  height: 100%;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 10px 20px;
+}
+
+ul {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+li {
+  list-style: none;
+  transition: ease-in-out 0.5s;
+}
+li:hover {
+  color: rgba(255, 255, 255, 0.577);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 30px auto;
+  align-items: center;
+}
+h1 {
+  font-size: 5rem;
+}
+
+.under-h1 {
+  color: rgb(78, 78, 246);
+  margin-top: 5px;
+  font-size: 28px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-top: 0px;
+}
+
+.header-right {
+  width: 50%;
+}
+
+#modem {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.info {
+  background: rgb(12, 12, 12);
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 33% 67%;
+}
+.infos-left {
+  display: grid;
+  justify-items: center;
+  padding-left: 0;
+  justify-content: start;
+}
+
+.button-containers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+button {
+  border: none;
+  background: rgb(78, 78, 246);
+  color: white;
+  width: 150px;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin: 5px;
+  transition: ease-in-out 0.5s;
+}
+
+.investors {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+.img-containers {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.img-containers img {
+  height: 60px;
+}
+
+button:hover {
+  background: blue;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+/************ MEDIA QUERIES ****************/
+
+@media screen and (max-width: 760px) {
+  body {
+    font-size: 0.8rem;
+  }
+  .title-header {
+    font-size: 2rem;
+  }
+  header {
+    display: block;
+  }
+  nav {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 5px 15px;
+  }
+  ul {
+    justify-content: center;
+    justify-items: stretch;
+  }
+  .info {
+    background: rgb(12, 12, 12);
+    border-radius: 10px;
+    display: block;
+  }
+  .infos-left {
+    justify-content: center;
+  }
+
+  .infos-right {
+    display: grid;
+    justify-items: center;
+    align-items: end;
+  }
+
+  .img-containers img {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 1rem;
+  }
+
+  .title-header {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
